@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="signin.css">
+</head>
+<body>
+    <div class="container">
+        <div class="image-container">
+            <img src="image.jpeg" alt="image"> 
+        </div>
+        <div class="login-box">
+            <h2>Login</h2>
+            <form action="#">
+                <div class="input-field">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="input-field">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="input-field">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+               <a href="http://127.0.0.1:3000/home.html"><button type="submit">Login</button></a>
+            </form>
+        </div>
+        <div class="image-container">            
+        </div>
+        <script>
+            document.getElementById("IsgninForm").addEventListener("submit", function(event) {
+                event.preventDefault(); // Prevent the form from submitting normally
+                
+                // Simulate form submission
+                // You can replace the window.location.href with the actual URL of your home page
+                window.location.href = "home.html";
+            });
+        </script>
+    </div>
+</body>
+</html>

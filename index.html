@@ -1,42 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-    <!-- Font Awesome cdn css -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./styles.css">
-    <title>To Do List</title>
-</head>
-<body>
-
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Page</title>
+    <link rel="stylesheet" href="stylesh.css" />
+  </head>
+  <body>
     <header>
-        <h1>My To Do List</h1>
-    </header>
-    <form action="">
-        <input type="text" class="todo-input">
-        <button class="todo-button" type="submit">
-            <i class="fas fa-plus-circle fa-lg"></i>
-        </button>
-        <div class="select">
-            <select name="todos" class="filter-todo">
-                <option value="all">All</option>
-                <option value="completed">Completed</option>
-                <option value="incomplete">Incomplete</option>
-            </select>
+      <!-- Navigation Menu -->
+      <div class="navbar">
+        <div class="logo">TasKMasteR</div>
+        <div class="nav-container">
+          <nav>
+            <ul>
+              <li><a href="second.html">Lets-DO</a></li>
+              <li><a href="aboutpg.html">About US </a></li>
+              <li><a href="feedback.html">Contact US</a></li>
+            </ul>
+          </nav>
+          <a href="signin.html" class="button">Sign IN</a>
         </div>
-    </form>
+      </div>
+    </header>
 
-    <div class="todo-container">
-        <ul class="todo-list"></ul>
-    </div>
+    <!-- Hero -->
+    <section class="hero">
+      <!-- Hero Left -->
+      <div class="hero-left">
+        <h1>Take control of your Day:</h1>
+        <h2>Use a TO DO list</h2>
+        <span></span>
+        <div class="btns">
+          <a href="second.html" class="btns-button">Give It a Try</a>
+        </div>
+      </div>
 
-    <script src="./script.js"></script>
-    
-</body>
+      <!-- Hero Right -->
+      <div class="hero-right">
+        <div class="right-top">
+          <img src="homepage.png" alt="noimage" class="rtop-img" />
+          <div class="soc-icons">
+           <a href="https://www.instagram.com/"><img src="icon.png" alt="" /></a> 
+            <img src="icon 2.png" alt="" />
+            <a href="https://www.messenger.com/"><img src="Icon 3.png" alt="" /></a>
+          </div>
+        </div>
+        <div class="right-bottom">
+          <div class="cta">
+            <div class="cta-content">
+              <p>You are the difference.</p>
+              <span></span>
+            </div>
+      </div>
+    </section>
+  </body>
 </html>
